@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Wishlist - DIRI BAKAL</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="account.css">
+    <link rel="stylesheet" href="wishlist.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">DIRI BAKAL</a>
+            </div>
+            <nav>
+                <ul class="main-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li class="dropdown">
+                        <a href="shop.html">Shop</a>
+                        <div class="dropdown-content">
+                            <a href="men.html">Men</a>
+                            <a href="women.html">Women</a>
+                            <a href="kids.html">Kids</a>
+                            <a href="accessories.html">Accessories</a>
+                        </div> 
+                    </li>
+                    <li><a href="New Arrivals.html">New Arrivals</a></li>
+                    <li><a href="Sale.html">Sale</a></li>
+                    <li><a href="about us.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="user-actions">
+                
+                <a href="account.html" class="icon-btn"><i class="fas fa-user"></i></a>
+                <a href="wishlist.html" class="icon-btn active"><i class="fas fa-heart"></i></a>
+                <a href="cart.html" class="icon-btn cart-icon">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count">0</span>
+                </a>
+            </div>
+            <div class="mobile-menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="account-section">
+            <div class="container">
+                <div class="account-container">
+                    <div class="account-sidebar">
+                        <div class="account-user">
+                            <div class="account-avatar">
+                                <i class="fas fa-user-circle"></i>
+                            </div>
+                            <div class="account-welcome">
+                                <h3>Welcome</h3>
+                                <p class="user-name">User Name</p>
+                            </div>
+                        </div>
+                        <ul class="account-menu">
+                            <li><a href="account.html">Dashboard</a></li>
+                            <li><a href="orders.html">Order History</a></li>
+                            <li class="active"><a href="wishlist.html">Wishlist</a></li>
+                            <li><a href="newsletter.html">Newsletter</a></li>
+                            <li><a href="returns.html">Returns</a></li>
+                            <li><a href="address.html">Address Book</a></li>
+                            <li><a href="payment.html">Payment Methods</a></li>
+                            <li><a href="profile.html">Edit Profile</a></li>
+                            <li><a href="#" id="logout-btn">Logout</a></li>
+                        </ul>
+                    </div>
+                    <div class="account-content">
+                        <h1>My Wishlist</h1>
+                        
+                        <div class="wishlist-actions">
+                            <div class="wishlist-count">
+                                <p><span id="wishlist-item-count">3</span> items in your wishlist</p>
+                            </div>
+                            <div class="wishlist-buttons">
+                                <button class="btn-sm btn-outline" id="clear-wishlist">Clear All</button>
+                                <button class="btn-sm" id="add-all-to-cart">Add All to Cart</button>
+                            </div>
+                        </div>
+                        
+                        <div class="wishlist-grid">
+                            <!-- Example wishlist item 1 -->
+                            <div class="wishlist-item">
+                                <div class="wishlist-remove">
+                                    <button class="remove-btn"><i class="fas fa-times"></i></button>
+                                </div>
+                                <div class="wishlist-image">
+                                    <img src="images/products/placeholder.jpg" alt="Product Name">
+                                    <div class="wishlist-tag sale">SALE</div>
+                                </div>
+                                <div class="wishlist-details">
+                                    <h3>Premium Cotton T-Shirt</h3>
+                                    <div class="wishlist-price">
+                                        <span class="price-current">$24.99</span>
+                                        <span class="price-original">$34.99</span>
+                                    </div>
+                                    <div class="wishlist-stock in-stock">
+                                        <i class="fas fa-check-circle"></i> In Stock
+                                    </div>
+                                    <div class="wishlist-actions">
+                                        <button class="btn-sm">Add to Cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Example wishlist item 2 -->
+                            <div class="wishlist-item">
+                                <div class="wishlist-remove">
+                                    <button class="remove-btn"><i class="fas fa-times"></i></button>
+                                </div>
+                                <div class="wishlist-image">
+                                    <img src="images/products/placeholder.jpg" alt="Product Name">
+                                </div>
+                                <div class="wishlist-details">
+                                    <h3>Slim Fit Denim Jeans</h3>
+                                    <div class="wishlist-price">
+                                        <span class="price-current">$69.99</span>
+                                    </div>
+                                    <div class="wishlist-stock in-stock">
+                                        <i class="fas fa-check-circle"></i> In Stock
+                                    </div>
+                                    <div class="wishlist-actions">
+                                        <button class="btn-sm">Add to Cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Example wishlist item 3 -->
+                            <div class="wishlist-item">
+                                <div class="wishlist-remove">
+                                    <button class="remove-btn"><i class="fas fa-times"></i></button>
+                                </div>
+                                <div class="wishlist-image">
+                                    <img src="images/products/placeholder.jpg" alt="Product Name">
+                                </div>
+                                <div class="wishlist-details">
+                                    <h3>Classic Leather Watch</h3>
+                                    <div class="wishlist-price">
+                                        <span class="price-current">$129.99</span>
+                                    </div>
+                                    <div class="wishlist-stock out-of-stock">
+                                        <i class="fas fa-times-circle"></i> Out of Stock
+                                    </div>
+                                    <div class="wishlist-actions">
+                                        <button class="btn-sm disabled">Add to Cart</button>
+                                        <button class="btn-sm btn-outline">Notify Me</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Empty state for when wishlist is empty -->
+                        <div class="empty-wishlist hidden">
+                            <div class="empty-wishlist-content">
+                                <i class="far fa-heart"></i>
+                                <h3>Your Wishlist is Empty</h3>
+                                <p>Add items you love to your wishlist. Review them anytime and easily move them to your cart.</p>
+                                <a href="shop.html" class="btn">Continue Shopping</a>
+                            </div>
+                        </div>
+                        
+                        <div class="recommended-products">
+                            <h2>You Might Also Like</h2>
+                            <div class="product-slider">
+                                <!-- Example recommended product 1 -->
+                                <div class="product-card">
+                                    <div class="product-image">
+                                        <img src="images/products/placeholder.jpg" alt="Product Name">
+                                        <div class="product-actions">
+                                            <button class="product-action"><i class="fas fa-heart"></i></button>
+                                            <button class="product-action"><i class="fas fa-shopping-cart"></i></button>
+                                            <button class="product-action"><i class="fas fa-eye"></i></button>
+                                        </div>
+                                    </div>
+                                    <div class="product-info">
+                                        <h3>Casual Sneakers</h3>
+                                        <div class="product-price">$79.99</div>
+                                    </div>
+                                </div>
+                                
+                                <!-- Example recommended product 2 -->
+                                <div class="product-card">
+                                    <div class="product-image">
+                                        <img src="images/products/placeholder.jpg" alt="Product Name">
+                                        <div class="product-actions">
+                                            <button class="product-action"><i class="fas fa-heart"></i></button>
+                                            <button class="product-action"><i class="fas fa-shopping-cart"></i></button>
+                                            <button class="product-action"><i class="fas fa-eye"></i></button>
+                                        </div>
+                                    </div>
+                                    <div class="product-info">
+                                        <h3>Lightweight Jacket</h3>
+                                        <div class="product-price">$89.99</div>
+                                    </div>
+                                </div>
+                                
+                                <!-- Example recommended product 3 -->
+                                <div class="product-card">
+                                    <div class="product-image">
+                                        <img src="images/products/placeholder.jpg" alt="Product Name">
+                                        <div class="product-tag new">NEW</div>
+                                        <div class="product-actions">
+                                            <button class="product-action"><i class="fas fa-heart"></i></button>
+                                            <button class="product-action"><i class="fas fa-shopping-cart"></i></button>
+                                            <button class="product-action"><i class="fas fa-eye"></i></button>
+                                        </div>
+                                    </div>
+                                    <div class="product-info">
+                                        <h3>Stylish Sunglasses</h3>
+                                        <div class="product-price">$49.99</div>
+                                    </div>
+                                </div>
+                                
+                                <!-- Example recommended product 4 -->
+                                <div class="product-card">
+                                    <div class="product-image">
+                                        <img src="images/products/placeholder.jpg" alt="Product Name">
+                                        <div class="product-tag sale">SALE</div>
+                                        <div class="product-actions">
+                                            <button class="product-action"><i class="fas fa-heart"></i></button>
+                                            <button class="product-action"><i class="fas fa-shopping-cart"></i></button>
+                                            <button class="product-action"><i class="fas fa-eye"></i></button>
+                                        </div>
+                                    </div>
+                                    <div class="product-info">
+                                        <h3>Designer Belt</h3>
+                                        <div class="product-price">
+                                            <span class="price-current">$39.99</span>
+                                            <span class="price-original">$59.99</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>DIRI BAKAL</h3>
+                    <p>Elevating your style with premium quality fashion designed to inspire confidence and self-expression.</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <h4>Shop</h4>
+                    <ul class="footer-links">
+                        <li><a href="men.html">Men</a></li>
+                        <li><a href="women.html">Women</a></li>
+                        <li><a href="kids.html">Kids</a></li>
+                        <li><a href="accessories.html">Accessories</a></li>
+                        <li><a href="New Arrivals.html">New Arrivals</a></li>
+                        <li><a href="Sale.html">Sale</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h4>Customer Service</h4>
+                    <ul class="footer-links">
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="shipping.html">Shipping & Returns</a></li>
+                        <li><a href="size-guide.html">Size Guide</a></li>
+                        <li><a href="track-order.html">Track Order</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h4>Information</h4>
+                    <ul class="footer-links">
+                        <li><a href="about us.html">About Us</a></li>
+                        <li><a href="careers.html">Careers</a></li>
+                        <li><a href="sustainability.html">Sustainability</a></li>
+                        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                        <li><a href="terms.html">Terms & Conditions</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h4>Newsletter</h4>
+                    <p>Sign up to get exclusive offers and updates on new arrivals.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your email address" required>
+                        <button type="submit"><i class="fas fa-arrow-right"></i></button>
+                    </form>
+                    <div class="payment-methods">
+                        <i class="fab fa-cc-visa"></i>
+                        <i class="fab fa-cc-mastercard"></i>
+                        <i class="fab fa-cc-amex"></i>
+                        <i class="fab fa-cc-paypal"></i>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2025 DIRI BAKAL. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+    <script src="wishlist.js"></script>
+</body>
+</html>
